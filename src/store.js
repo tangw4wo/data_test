@@ -4,7 +4,13 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    client:false
+  },
+  mutations: {
+    clientChange:(state,boolean) =>{
+      state.client=boolean;
+    }
+  },
   actions: {}
 });
